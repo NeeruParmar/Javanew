@@ -6,26 +6,37 @@ public class Assignment {
 		 int a=1;
  
 
-		    System.out.println(a++);
+		    System.out.println(a++); 
+		    //a=1
 		    
 		    System.out.println(a++);
+		    //a=1+1 =2 (added one as per previous command)
 		   
 		    System.out.println(++a);
+		    //a= 2+1+1= 4 (one added as per previous command and one added as per current )
+		    
 		    
 		    System.out.println(a++);
+		    //a =4 
+		    
 		    
 		    System.out.println(a++);
-		    
+		    //a= 4+1  =5 (one added as per previous command)
 		   
 		    System.out.println(a--);
+		    
+		    //a =6  (one added as per previous command)
 		    System.out.println(a--);
+		    //a =5 (one sub as per previous command)
 
 		    
 		    System.out.println(--a);
+		    //a =3 (one subtracted from previous command and one subtracted from current command 
 		    System.out.println(--a);
+		    //a=2 ; 3-1 as per current command 
 		    
 		    System.out.println(a--);
-		    
+		    //a=2
 		    
 //ques 14 
 		    int x = 1;       
