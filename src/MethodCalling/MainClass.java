@@ -8,11 +8,11 @@ public class MainClass {
 		double newtotalAccountBal = 10;
 		double amountTobedeposit = 10;
 
-		double depositMoney = bankOperation.depsoitMoney(10, "5222222222222222", 1100);
+		double depositMoney = bankOperation.depsoitMoney(100, "5222222222222222", 1100);
 		if (depositMoney > 0) {
-			System.out.println("New Balance" + (newtotalAccountBal + amountTobedeposit));
+			System.out.println("New Balance " + (newtotalAccountBal + amountTobedeposit));
 		} else {
-			System.out.println("No deposit done:");
+			System.out.println("No deposit done: ");
 		}
 
 	}

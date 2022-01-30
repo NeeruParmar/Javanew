@@ -20,7 +20,7 @@ public class BankOperation {
 
 	double depsoitMoney(double amountTobedeposit, String cardNum, int pinCode) {
 		System.out.println("Welcome to Your Acc: Select Amount to be deposited " + cardVerification(cardNum, pinCode));
-		System.out.println("Amount Selected " + amountTobedeposit);
+		System.out.println("Amount Selected for Deposit " + amountTobedeposit);
 		if (amountTobedeposit > 0) {
 			newBalance = totalAccountBal + amountTobedeposit;
 
