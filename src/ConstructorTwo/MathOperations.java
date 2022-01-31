@@ -4,7 +4,7 @@ public class MathOperations {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//list of numbers created, method created for multiplication 		
+	
 
 		Numbers obj1 = new Numbers();
 		Numbers obj2 = new Numbers(88, 88, 90);
