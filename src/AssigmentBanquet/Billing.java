@@ -13,20 +13,18 @@ public class Billing {
 
 		System.out.println("Please Enter Cost of Food");
 		int costOfFood = scan.nextInt();
-		
-		System.out.println("Please Enter Cost of Beverages");
-		int costOfBeverages=scan.nextInt();
-		System.out.println(" Enter Amount of Tip");
-		int tipCharge =scan.nextInt();
-		int BaseCost = banquet.calculateBaseCost(costOfFood, costOfBeverages, tipCharge);
-		double tax = banquet.calculateTax(BaseCost);
-		System.out.println("Enter the number of Guest");
-		int numOfGuest=scan.nextInt();
-		double cess = banquet.calculateCess(numOfGuest, BaseCost);
-		double totalCost = banquet.calculateTheTotalCost(BaseCost, tax, cess);
 
+		System.out.println("Please Enter Cost of Beverages");
+		int costOfBeverages = scan.nextInt();
+		System.out.println(" Enter Amount of Tip");
+		int tipCharge = scan.nextInt();
+		int BaseCost = banquet.calculateBaseCost(costOfFood, costOfBeverages, tipCharge);
+
+		System.out.println("Enter the number of Guest");
+		int numOfGuest = scan.nextInt();
+
+		double totalCost = banquet.calculateTheTotalCost(BaseCost, tipCharge, BaseCost, numOfGuest);
 		System.out.println("Total bill Cost  " + totalCost);
-		
-		
+
 	}
 }
