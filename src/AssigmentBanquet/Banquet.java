@@ -13,36 +13,35 @@ public class Banquet {
 
 	}
 
-	double calculateTax(int totalBaseCost) {
-		//tax percentage =20%
+	private double calculateTax(int totalBaseCost) {
+		// tax percentage =20%
 		totalTax = totalBaseCost * 0.20;
 		return totalTax;
 
 	}
 
-	double calculateCess(int numberOfGuest, int totalBaseCost) {
+	private double calculateCess(int numberOfGuest, int totalBaseCost) {
 
 		if (numberOfGuest <= 40) {
-			double totalCess = 0.04 * totalBaseCost;
+			return totalCess = 0.04 * totalBaseCost;
 		} else if (numberOfGuest <= 80) {
 
-			double totalCess = 0.08 * totalBaseCost;
+			return totalCess = 0.08 * totalBaseCost;
 		}
 
 		else if (numberOfGuest <= 150) {
-			double totalCess = 0.10 * totalBaseCost;
+			return totalCess = 0.10 * totalBaseCost;
 		}
 
 		else {
-			double totalCess = 0.125 * totalBaseCost;
+			return totalCess = 0.125 * totalBaseCost;
 		}
-
-		return totalCess;
 
 	}
 
-	double calculateTheTotalCost(int totalBaseCost, double totalTax, double totalCess) {
-		theTotalCost = totalBaseCost + totalTax + totalCess;
+	double calculateTheTotalCost(int totalBaseCost, double totalTax, double totalCess, int numberOfGuest) {
+		theTotalCost = totalBaseCost + calculateCess(numberOfGuest, totalBaseCost)
+				+ calculateCess(numberOfGuest, totalBaseCost);
 		return theTotalCost;
 	}
 
