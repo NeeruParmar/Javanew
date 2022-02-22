@@ -23,7 +23,7 @@ public class Billing {
 		System.out.println("Enter the number of Guest");
 		int numOfGuest = scan.nextInt();
 
-		double totalCost = banquet.calculateTheTotalCost(BaseCost, tipCharge, BaseCost, numOfGuest);
+		double totalCost = banquet.calculateTheTotalCost(BaseCost, numOfGuest);
 		System.out.println("Total bill Cost  " + totalCost);
 
 	}
