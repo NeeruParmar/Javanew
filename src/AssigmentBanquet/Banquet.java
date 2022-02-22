@@ -39,7 +39,7 @@ public class Banquet {
 
 	}
 
-	double calculateTheTotalCost(int totalBaseCost, double totalTax, double totalCess, int numberOfGuest) {
+	double calculateTheTotalCost(int totalBaseCost,  int numberOfGuest) {
 		theTotalCost = totalBaseCost + calculateCess(numberOfGuest, totalBaseCost)
 				+ calculateCess(numberOfGuest, totalBaseCost);
 		return theTotalCost;
